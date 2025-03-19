@@ -1,41 +1,106 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
+/* Header */
 header {
-    background: #333;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
-    padding: 20px 0;
+    padding: 60px 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
+    font-size: 2.5rem;
     margin: 0;
+    font-weight: 700;
 }
 
 header p {
-    margin: 5px 0 0;
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    opacity: 0.9;
 }
 
-section {
+/* Media Sosial */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Main Content */
+main {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    padding: 30px 20px;
     margin: 20px 0;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+    font-size: 1.8rem;
+    color: #2575fc;
+    border-bottom: 3px solid #2575fc;
     padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
@@ -43,15 +108,368 @@ ul {
 
 ul li {
     background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
+ul li:hover {
+    background: #e0e0e0;
+}
+
+/* Tombol Portfolio */
+.portfolio-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.portfolio-link:hover {
+    background: #6a11cb;
+    transform: translateY(-3px);
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    padding: 30px 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2575fc;
+    border-bottom: 3px solid #2575fc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Portfolio */
+.project {
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #2575fc;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project a:hover {
+    background: #6a11cb;
+}
+
+/* Tombol Kembali ke CV */
+.back-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.back-link:hover {
+    background: #6a11cb;
+    transform: translateY(-3px);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
     background: #333;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project h3 {
+        font-size: 1.3rem;
+    }
+
+    .project p {
+        font-size: 0.9rem;
+    }
+
+    .back-link {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-link {/* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Sections */
+        section {
+            padding: 30px 20px;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2575fc;
+            border-bottom: 3px solid #2575fc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        /* Portfolio */
+        .project {
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .project h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #2575fc;
+        }
+        
+        .project p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .project a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2575fc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .project a:hover {
+            background: #6a11cb;
+        }
+        
+        /* Tombol Kembali ke CV */
+        .back-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #2575fc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .back-link:hover {
+            background: #6a11cb;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #6a11cb;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+        
+            .project h3 {
+                font-size: 1.3rem;
+            }
+        
+            .project p {
+                font-size: 0.9rem;
+            }
+        
+            .back-link {
+                width: 100%;
+                padding: 12px 20px;
+            }
+        }
+        width: 100%;
+        padding: 12px 20px;
+    }
 }
